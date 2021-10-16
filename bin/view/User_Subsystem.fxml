@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Albums" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.userController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <ListView fx:id="album_list" layoutX="23.0" layoutY="14.0" prefHeight="344.0" prefWidth="177.0" />
+            <GridPane layoutX="216.0" layoutY="17.0" prefHeight="134.0" prefWidth="342.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.0" minWidth="10.0" prefWidth="109.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.0" minWidth="10.0" prefWidth="233.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Name: " />
+                  <Label text="Number of photos: " GridPane.rowIndex="1" />
+                  <Label text="Range of dates: " GridPane.rowIndex="2" />
+                  <Label fx:id="name" prefHeight="25.0" prefWidth="277.0" text="" GridPane.columnIndex="1" />
+                  <Label fx:id="numPhotos" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="range" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <Button fx:id="open_album" layoutX="400.0" layoutY="151.0" mnemonicParsing="false" onAction="#openAlbum" text="Open Album" />
+            <Button fx:id="delete" layoutX="506.0" layoutY="151.0" mnemonicParsing="false" onAction="#deleteAlbum" text="Delete" />
+            <Button fx:id="add" layoutX="344.0" layoutY="231.0" mnemonicParsing="false" onAction="#addAlbum" text="Create album" />
+            <Button fx:id="change_name" layoutX="451.0" layoutY="231.0" mnemonicParsing="false" onAction="#changeName" text="Edit Album Name" />
+            <Button fx:id="search" layoutX="216.0" layoutY="325.0" mnemonicParsing="false" onAction="#search" text="Search Photos" />
+            <TextField fx:id="editAlbum" layoutX="216.0" layoutY="196.0" prefHeight="25.0" prefWidth="342.0" />
+            <Button fx:id="logout" layoutX="521.0" layoutY="325.0" mnemonicParsing="false" onAction="#logout" text="log out" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>

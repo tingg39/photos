@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.singlePhotoController">
+   <children>
+      <ImageView fx:id="imageview" fitHeight="379.0" fitWidth="508.0" layoutX="14.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="back" layoutX="481.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <ListView fx:id="listview" layoutX="18.0" layoutY="436.0" prefHeight="129.0" prefWidth="196.0" />
+      <Label layoutX="244.0" layoutY="465.0" text="Caption: " />
+      <Label layoutX="244.0" layoutY="512.0" text="Date: " />
+      <Label fx:id="captionText" layoutX="292.0" layoutY="465.0" />
+      <Label fx:id="dateText" layoutX="275.0" layoutY="512.0" />
+   </children>
+</AnchorPane>

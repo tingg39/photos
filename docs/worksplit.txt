@@ -1,0 +1,6 @@
+Login Screen        | Kshitij Bafna
+Admin screen        | Kshitij Bafna
+Stock albums        | Kshitij Bafna
+User albums         | Kshitij Bafna
+Album               | Ting Yao
+Search              | Ting Yao
